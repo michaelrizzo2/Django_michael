@@ -9,3 +9,8 @@
 .thirddiv{
     color: blanchedalmond;
 }
+
+#singledout{
+    color: gray;
+    text-decoration: line-through;
+}
