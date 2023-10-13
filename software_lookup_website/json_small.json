@@ -1,3 +1,218 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:e9d6bbf5bbf4d0238bc43049406576e95fca42db7715f4867603d8c5f66117a7
 size 8011
+=======
+[
+{
+        "_id": {
+            "$oid": "65268fba05fe2ac64a36a42c"
+        },
+        "ecu": "SYNC",
+        "build": "production",
+        "branch": "SYNC-v1.9.0-Prod-Sign-Plusone",
+        "build_number": "98",
+        "description": "SYNC #98 - PROD MID HIGH CP Only",
+        "files": "CP",
+        "domain": "None",
+        "Fenix": "SWS-",
+        "environment": "PRD",
+        "official_build": false,
+        "build files": {
+            "build_url": "https://www.nexus.ford.com/repository/fnv2-private-maven-group/com/ford/sync/sync4_0/82e01c3cb35a2b548928d8bdf788b34e43c3752f/PU5T-14G670-UXJ/06589-Sync4-launch-SYNC-v1.9.0-Prod-Sign-Plusone-16G_32G-98-82e01c3cb3/PU5T-14G670-UXJ-06589-Sync4-launch-SYNC-v1.9.0-Prod-Sign-Plusone-16G_32G-98-82e01c3cb3.tar.gz",
+            "next_build_url": null,
+            "source_url": "",
+            "next_source_url": null,
+            "destination_url": "",
+            "vmcu": "PU5T-14G676-CC376.vbf"
+        },
+        "system_version": "v3.0.3",
+        "sws_info": {
+            "Apps": [],
+            "Core Files": [
+                "PU5T-14G676-CC376"
+            ]
+        },
+        "created": {
+            "$date": {
+                "$numberLong": "1697011436654"
+            }
+        }
+    },
+    {
+        "_id": {
+            "$oid": "6526905105fe2ac64a36a49a"
+        },
+        "ecu": "SYNC",
+        "build": "production",
+        "branch": "SYNC-v1.9.0-Prod-Sign-Plustwo",
+        "build_number": "98",
+        "description": "SYNC #98 - PROD LOW COST CP Only",
+        "files": "CP",
+        "domain": "None",
+        "Fenix": "SWS-",
+        "environment": "PRD",
+        "official_build": false,
+        "build files": {
+            "build_url": "https://www.nexus.ford.com/repository/fnv2-private-maven-group/com/ford/sync/sync4_0/82e01c3cb35a2b548928d8bdf788b34e43c3752f/PU5T-14G670-XMJ/06590-Sync4-launch-SYNC-v1.9.0-Prod-Sign-Plustwo-8G-98-82e01c3cb3/PU5T-14G670-XMJ-06590-Sync4-launch-SYNC-v1.9.0-Prod-Sign-Plustwo-8G-98-82e01c3cb3.tar.gz",
+            "next_build_url": null,
+            "source_url": "",
+            "next_source_url": null,
+            "destination_url": "",
+            "vmcu": "PU5T-14G676-CC376.vbf"
+        },
+        "system_version": "v3.0.3",
+        "sws_info": {
+            "Apps": [],
+            "Core Files": [
+                "PU5T-14G676-CC376"
+            ]
+        },
+        "created": {
+            "$date": {
+                "$numberLong": "1697011690313"
+            }
+        }
+    },
+    {
+        "_id": {
+            "$oid": "6526907505fe2ac64a36a4b2"
+        },
+        "ecu": "SYNC",
+        "build": "production",
+        "branch": "SYNC-v1.9.0-Prod-Sign-Plustwo",
+        "build_number": "98",
+        "description": "SYNC #98 - PROD MID HIGH CP Only",
+        "files": "CP",
+        "domain": "None",
+        "Fenix": "SWS-",
+        "environment": "PRD",
+        "official_build": false,
+        "build files": {
+            "build_url": "https://www.nexus.ford.com/repository/fnv2-private-maven-group/com/ford/sync/sync4_0/82e01c3cb35a2b548928d8bdf788b34e43c3752f/PU5T-14G670-UXJ/06590-Sync4-launch-SYNC-v1.9.0-Prod-Sign-Plustwo-16G_32G-98-82e01c3cb3/PU5T-14G670-UXJ-06590-Sync4-launch-SYNC-v1.9.0-Prod-Sign-Plustwo-16G_32G-98-82e01c3cb3.tar.gz",
+            "next_build_url": null,
+            "source_url": "",
+            "next_source_url": null,
+            "destination_url": "",
+            "vmcu": "PU5T-14G676-CC376.vbf"
+        },
+        "system_version": "v3.0.3",
+        "sws_info": {
+            "Apps": [],
+            "Core Files": [
+                "PU5T-14G676-CC376"
+            ]
+        },
+        "created": {
+            "$date": {
+                "$numberLong": "1697011703819"
+            }
+        }
+    },
+    {
+        "_id": {
+            "$oid": "6526a5df05fe2ac64a36b217"
+        },
+        "ecu": "SYNC",
+        "build": "development",
+        "branch": "Sync4-master-40",
+        "build_number": "3058",
+        "description": "SYNC #3058 - DEV LOW COST CP Only",
+        "files": "CP",
+        "domain": "None",
+        "Fenix": "SWS-",
+        "environment": "PRD",
+        "official_build": false,
+        "build files": {
+            "build_url": "https://www.nexus.ford.com/repository/fnv2-private-maven-group/com/ford/sync/sync4_0/master-integration/PU5T-14G670-PPF/06593-Sync4-master-40-8G-3058-caaa57fc6e/PU5T-14G670-PPF-06593-Sync4-master-40-8G-3058-caaa57fc6e.tar.gz",
+            "next_build_url": null,
+            "source_url": "https://www.nexus.ford.com/repository/fnv2-private-maven-group/com/ford/sync/sync4_0/launch-SYNC-v1/2/0/MU5T-14G670-CA/05439-Sync4-launch-SYNC-v1.2.0-8G-202-a58aa4e361/MU5T-14G670-CA-05439-Sync4-launch-SYNC-v1.2.0-8G-202-a58aa4e361.tar.gz",
+            "next_source_url": null,
+            "destination_url": "",
+            "vmcu": "PU5T-14G676-BE388.vbf"
+        },
+        "system_version": "v3.0.3",
+        "sws_info": {
+            "Apps": [],
+            "Core Files": [
+                "PU5T-14G676-BE388"
+            ]
+        },
+        "created": {
+            "$date": {
+                "$numberLong": "1697017217415"
+            }
+        }
+    },
+    {
+        "_id": {
+            "$oid": "6526a60505fe2ac64a36b232"
+        },
+        "ecu": "SYNC",
+        "build": "development",
+        "branch": "Sync4-master-40",
+        "build_number": "3058",
+        "description": "SYNC #3058 - DEV MID HIGH CP Only",
+        "files": "CP",
+        "domain": "None",
+        "Fenix": "SWS-",
+        "environment": "PRD",
+        "official_build": false,
+        "build files": {
+            "build_url": "https://www.nexus.ford.com/repository/fnv2-private-maven-group/com/ford/sync/sync4_0/master-integration/PU5T-14G670-NUF/06593-Sync4-master-40-16G-3058-caaa57fc6e/PU5T-14G670-NUF-06593-Sync4-master-40-16G-3058-caaa57fc6e.tar.gz",
+            "next_build_url": null,
+            "source_url": "https://www.nexus.ford.com/repository/fnv2-private-maven-group/com/ford/sync/sync4_0/launch-SYNC-v1/2/0/MU5T-14G670-ACA/05439-Sync4-launch-SYNC-v1.2.0-16G_32G-202-a58aa4e361/MU5T-14G670-ACA-05439-Sync4-launch-SYNC-v1.2.0-16G_32G-202-a58aa4e361.tar.gz",
+            "next_source_url": null,
+            "destination_url": "",
+            "vmcu": "PU5T-14G676-BE388.vbf"
+        },
+        "system_version": "v3.0.3",
+        "sws_info": {
+            "Apps": [],
+            "Core Files": [
+                "PU5T-14G676-BE388"
+            ]
+        },
+        "created": {
+            "$date": {
+                "$numberLong": "1697017248496"
+            }
+        }
+    },
+    {
+        "_id": {
+            "$oid": "6526adbdfab9b279f130a0dd"
+        },
+        "ecu": "SYNC",
+        "build": "development",
+        "branch": "Sync4-launch-SYNC-v1.5.0",
+        "build_number": "161",
+        "description": "SYNC #161 - DEV LOW COST CP Only",
+        "files": "CP",
+        "domain": "None",
+        "Fenix": "SWS-",
+        "environment": "PRD",
+        "official_build": false,
+        "build files": {
+            "build_url": "https://www.nexus.ford.com/repository/fnv2-private-maven-group/com/ford/sync/sync4_0/launch-SYNC-v1/5/0/PU5T-14G670-CKX/05316-Sync4-launch-SYNC-v1.5.0-8G-161-3013ea103b/PU5T-14G670-CKX-05316-Sync4-launch-SYNC-v1.5.0-8G-161-3013ea103b.tar.gz",
+            "next_build_url": null,
+            "source_url": "https://www.nexus.ford.com/repository/fnv2-private-maven-group/com/ford/sync/sync4_0/launch-SYNC-v1/2/0/MU5T-14G670-CA/05439-Sync4-launch-SYNC-v1.2.0-8G-202-a58aa4e361/MU5T-14G670-CA-05439-Sync4-launch-SYNC-v1.2.0-8G-202-a58aa4e361.tar.gz",
+            "next_source_url": null,
+            "destination_url": "",
+            "vmcu": "MU5T-14G676-DT260.vbf"
+        },
+        "system_version": "v3.0.3",
+        "sws_info": {
+            "Apps": [],
+            "Core Files": [
+                "MU5T-14G676-DT260"
+            ]
+        },
+        "created": {
+            "$date": {
+                "$numberLong": "1697019215287"
+            }
+        }
+    }
+]
+>>>>>>> fcf9230 (Made Small json)
