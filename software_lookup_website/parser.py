@@ -1,4 +1,5 @@
 import json 
 with open('software_lookup_website/json_small.json', 'r') as fcc_file:
-    for file in fcc_file.readlines():
-        print (type(file))
+    data=json.load(fcc_file)
+    for i in data:
+        print(i['sws_info'])
