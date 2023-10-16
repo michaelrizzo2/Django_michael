@@ -13,5 +13,4 @@ with open('software_lookup_website/json_small.json', 'r') as fcc_file:
                     print(entry[value]["Apps"])
             else:
                 print(entry[value])
-            #This will call the entries without nested dictionaries
         
