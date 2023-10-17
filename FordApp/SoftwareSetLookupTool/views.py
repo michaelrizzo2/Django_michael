@@ -1,3 +1,9 @@
 from django.shortcuts import render
+def home(request):
+    return render(request, "home.html")
 
-# Create your views here.
+def projects(request):
+    return render(request, "projects.html")
+
+def contact(request):
+    return render(request, "contact.html")
