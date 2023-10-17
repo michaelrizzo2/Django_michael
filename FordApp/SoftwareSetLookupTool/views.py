@@ -1,9 +1,9 @@
 from django.shortcuts import render
 def home(request):
-    return render(request, "home.html")
+    return render(request, "login.html")
 
 def projects(request):
-    return render(request, "projects.html")
+    return render(request, "buildurl.html")
 
 def contact(request):
-    return render(request, "contact.html")
+    return render(request, "lookuptable.html")
