@@ -3,7 +3,7 @@ def login(request):
     return render(request, "login.html")
 
 def buildurl(request):
-    print(request.POST)
+    print(request.body)
     return render(request, "buildurl.html")
 
 def lookuptable(request):
