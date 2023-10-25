@@ -14,7 +14,7 @@ def buildurl(request):
         form=BuildUrlForm(request.POST)
         if form.is_valid():
             build_url=form.cleaned_data['build_url']
-    return render(request,"buildurl.html")
+    return render(request,"buildurl.html",{'form': form})
 
 def lookuptable(request):
     return render(request, "lookuptable.html")
