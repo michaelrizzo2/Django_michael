@@ -14,7 +14,9 @@
     </div> 
     <div class="container">
     <form action="{% url 'lookuptable' %}" method="post">
-       <button type="submit" class="btn btn-default" name="jenkinsbuildurl">
+        {% csrf_token %}
+        {{form.as_p}}
+       <button type="submit" class="btn btn-default">
         Submit Build Url
        </button>
     </form>
