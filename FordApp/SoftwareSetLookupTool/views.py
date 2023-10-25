@@ -13,8 +13,8 @@ def buildurl(request):
     else:
         form=BuildUrlForm(request.POST)
         if form.is_valid():
-            buildurl=form.cleaned_data['build_url']
-    return render(request,"buildurl.html",{"Url":buildurl})
+            build_url=form.cleaned_data['build_url']
+    return render(request,"buildurl.html")
 
 def lookuptable(request):
     return render(request, "lookuptable.html")
