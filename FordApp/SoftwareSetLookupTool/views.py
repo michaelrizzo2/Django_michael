@@ -8,7 +8,9 @@ def login(request):
 })
 
 def buildurl(request):
-    form=BuildUrlForm()
+    if request.method =="GET":
+        form=BuildUrlForm()
+        print(form)
     return render(request,"buildurl.html",{'form': form})
 
 def lookuptable(request):
