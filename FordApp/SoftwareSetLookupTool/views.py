@@ -3,7 +3,9 @@ from FordApp.forms import BuildUrlForm,LoginForm
 def login(request):
     if request.method=="GET":
         form=LoginForm()
-    return render(request, "login.html")
+    return render(request, 'login.html', {
+'form': form,
+})
 
 def buildurl(request):
     if request.method=="GET":
