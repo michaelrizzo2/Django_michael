@@ -5,10 +5,6 @@ def login(request):
     if request.method =="GET":
         form=LoginForm()
         print(form)
-    else:
-        form=LoginForm(request.POST)
-        print(form)
-
     return render(request, 'login.html', {'form': form })
 
 
@@ -17,9 +13,6 @@ def buildurl(request):
     print(request.method)
     if request.method =="GET":
         form=BuildUrlForm()
-        print(form)
-    else:
-        form=BuildUrlForm(request.POST)
         print(form)
 
     return render(request,"buildurl.html",{'form': form})
