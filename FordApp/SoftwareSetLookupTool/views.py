@@ -22,7 +22,6 @@ def buildurl(request):
         form=BuildUrlForm(request.POST)
         print(form)
 
-    return render(request, 'login.html', {'form': form })
     return render(request,"buildurl.html",{'form': form})
 
 def lookuptable(request):
