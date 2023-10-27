@@ -13,11 +13,11 @@
         </div>
     </div> 
     <div class="container">
-    <form action="{% url 'lookuptable' %}" method="post">
+    <form method="post">
         {% csrf_token %}
         {{form.as_p}}
        <button type="submit" class="btn btn-default">
-        Submit Build Url
+        <a href="{% url 'lookuptable' %}">Submit Build Url</a>
        </button>
     </form>
     </div>
