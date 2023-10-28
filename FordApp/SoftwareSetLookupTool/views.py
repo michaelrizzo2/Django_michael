@@ -2,18 +2,28 @@ from django.shortcuts import render
 from FordApp.forms import BuildUrlForm,LoginForm
 def login(request):
     print(request.method)
-    if request.method =="GET":
+    if request.method =="POST":
+        form=LoginForm(request.POST)
+        if form.is_valid():
+            print("Success")
+            print(form)
+    else:
         form=LoginForm()
-        print(form)
+
+
     return render(request, 'login.html', {'form': form })
 
 
 
 def buildurl(request):
     print(request.method)
-    if request.method =="GET":
+    if request.method =="POST":
+        form=BuildUrlForm(request.POST)
+        if form.is_valid():
+            print("Success")
+            print(form)
+    else:
         form=BuildUrlForm()
-        print(form)
 
     return render(request,"buildurl.html",{'form': form})
 
