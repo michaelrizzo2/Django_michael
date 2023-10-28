@@ -11,7 +11,7 @@ def login(request):
         form=LoginForm()
 
 
-    return render(request, 'login.html', {'form': form })
+    return render(request, 'buildurl.html', {'form': form })
 
 
 
@@ -25,7 +25,7 @@ def buildurl(request):
     else:
         form=BuildUrlForm()
 
-    return render(request,"buildurl.html",{'form': form})
+    return render(request,"lookuptable.html",{'form': form})
 
 def lookuptable(request):
     return render(request, "lookuptable.html")
