@@ -16,7 +16,6 @@ def login(request):
 
 
 def buildurl(request):
-    print(request.method)
     if request.method =="POST":
         form=BuildUrlForm(request.POST)
         if form.is_valid():
