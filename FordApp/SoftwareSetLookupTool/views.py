@@ -7,11 +7,11 @@ def login(request):
         if form.is_valid():
             print("Success")
             print(form)
+        return render(request, 'buildurl.html', {'form': form })
     else:
         form=LoginForm()
 
-
-    return render(request, 'buildurl.html', {'form': form })
+    return render(request, 'login.html', {'form': form })
 
 
 
@@ -21,10 +21,12 @@ def buildurl(request):
         if form.is_valid():
             print("Success")
             print(form)
+        return render(request,"lookuptable.html",{'form': form})
     else:
         form=BuildUrlForm()
 
-    return render(request,"lookuptable.html",{'form': form})
+    return render(request,"buildurl.html",{'form': form})
 
 def lookuptable(request):
-    return render(request, "lookuptable.html")
+    pass
+    return render(request,"lookuptable.html")
