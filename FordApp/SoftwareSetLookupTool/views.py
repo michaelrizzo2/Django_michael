@@ -8,7 +8,6 @@ def buildurl(request):
         form=BuildUrlForm(request.POST)
         if form.is_valid():
             print("Success")
-            print(form.cleaned_data["build_url"])
         return render(request,"buildurl.html",{'form': form})
     else:
         form=BuildUrlForm()
