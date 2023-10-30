@@ -14,9 +14,9 @@
     <div class="container">
       <form>
         {% csrf_token %}
+        
         {{form.as_p}}
       </form>
-        <button type="submit" class="btn btn-default">Save to File</button>
     </div>
     <p>{{build_url}}</p>
     
