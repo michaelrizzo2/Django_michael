@@ -3,9 +3,10 @@ from FordApp.forms import BuildUrlForm
 
 
 def buildurl(request):
-    print(request.method)
+    print(f"The method is {request.method}")
+    print(request.GET)
     if request.method =="GET":
-        form=BuildUrlForm(request.GET)
+        form=BuildUrlForm()
         if form.is_valid():
             print("Success")
         return render(request,"buildurl.html",{'form': form})
