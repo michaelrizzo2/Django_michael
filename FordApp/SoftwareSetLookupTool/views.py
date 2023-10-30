@@ -1,18 +1,5 @@
 from django.shortcuts import render
-from FordApp.forms import BuildUrlForm,LoginForm
-def login(request):
-    print(request.method)
-    if request.method =="POST":
-        form=LoginForm(request.POST)
-        if form.is_valid():
-            print("Success")
-            print(form)
-        return render(request, 'login.html', {'form': form })
-    else:
-        form=LoginForm()
-
-    return render(request, 'login.html', {'form': form })
-
+from FordApp.forms import BuildUrlForm
 
 
 def buildurl(request):
