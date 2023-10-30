@@ -6,10 +6,12 @@ def buildurl(request):
     print(request.method)
     if request.method =="POST":
         form=BuildUrlForm(request.POST)
+        print(form)
         if form.is_valid():
             print("Success")
         return render(request,"buildurl.html",{'form': form})
     else:
+        print(form)
         form=BuildUrlForm()
 
     return render(request,"buildurl.html",{'form': form})
