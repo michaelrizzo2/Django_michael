@@ -1,18 +1,22 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from FordApp.forms import BuildUrlForm
 
 
 def buildurl(request):
-    print(f"The method is {request.method}")
-    print(request.GET)
-    if request.method =="GET":
-        form=BuildUrlForm()
-        if form.is_valid():
-            print("Success")
-        return render(request,"buildurl.html",{'form': form})
-    else:
+    if request.method =="POST":
         form=BuildUrlForm(request.POST)
+        if form.is_valid():
+            build_url=form.cleaned_data['build_url']
+            return redirect('lookuptable',build_url=build_url)
+    else:
+        form=BuildUrlForm()
     return render(request,"buildurl.html",{'form': form})
 
-def lookuptable(request):
-    return render(request,"lookuptable.html")
+def lookuptable(request,build_url):
+    print(request.method)
+    my_variable = request.GET.get('build_url')
+    context = {'my_variable': build_url}
+    return render(request, 'lookuptable.html', context)
+    if request.method=="GET":
+        print(request)
+    return render(request,"lookuptable.html",{"data": build_url})

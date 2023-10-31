@@ -1,4 +1,6 @@
 from django import forms
-
-class BuildUrlForm(forms.Form):
-    build_url=forms.CharField(max_length=256)
+from SoftwareSetLookupTool.models import BuildUrl
+class BuildUrlForm(forms.ModelForm):
+    class Meta:
+        model=BuildUrl
+        fields=["build_url"]
