@@ -1,6 +1,7 @@
 from re import I
 from django.shortcuts import render,redirect
 from FordApp.forms import BuildUrlForm
+from SoftwareSetLookupTool.swum_utils import DatabaseManager
 
 
 def buildurl(request):
