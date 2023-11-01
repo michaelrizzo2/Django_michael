@@ -1,0 +1,17 @@
+/*this is a comment*/
+
+h1{
+    color: blue;
+}
+
+li{
+    color: rgb(255, 97, 0);
+}
+
+p{
+    color: #0F49D2;
+}
+
+h4{
+    color: rgba(255, 97, 0, .5);
+}

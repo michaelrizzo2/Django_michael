@@ -1,0 +1,29 @@
+.firstdiv{
+    color: blueviolet;
+}
+
+.seconddiv{
+    color: aquamarine;
+}
+
+.thirddiv{
+    color: blanchedalmond;
+}
+
+#singledout{
+    color: gray;
+    text-decoration: line-through;
+}
+
+h3 + ul{
+    border: 4px dotted peachpuff
+}
+
+li a{
+    color:midnightblue
+}
+
+li a[href="www.npr.com"]{
+    color: blue;
+    border: 5px solid purple;
+}

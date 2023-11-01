@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Set lookup</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> 
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+        <h1>Ford Software Set Lookup Tool Results</h1>
+        </div>
+    </div>
+    <h2>My variable should display below:</h2>
+    <h3>{{my_variable}}</h3>
+    <div class="container">
+      <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+      </form>
+        <button type="submit" class="btn btn-default">Save to File</button>
+    </div>
+    
+</body>
+</html>
