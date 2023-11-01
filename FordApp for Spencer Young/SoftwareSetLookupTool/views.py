@@ -17,8 +17,3 @@ def lookuptable(request,build_url):
     my_variable = request.GET.get('build_url')
     context = {'my_variable': build_url}
     return render(request, 'lookuptable.html', context)
-    """
-    if request.method=="GET":
-        print(request)
-    return render(request,"lookuptable.html",{"data": build_url})
-    """
