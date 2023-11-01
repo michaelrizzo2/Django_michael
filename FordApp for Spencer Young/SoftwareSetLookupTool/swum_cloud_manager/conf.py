@@ -3,14 +3,15 @@ import time
 import json
 from pathlib import Path
 from calendar import timegm
+WORKING_DIR = os.getcwd()
 CURRENT_USER = os.getlogin()
 PC_DOMAIN = "na2.ford.com"
 PARENT_DIR = os.path.dirname(__file__)
 ROOT_DIR = str(Path(PARENT_DIR).parent)
 AUTOMATION_PC = ['WGC110F4N1H03', 'WGC1106PND793']
 PC_NAME = os.environ['COMPUTERNAME']
-PART_II_SPECS = os.path.join(PARENT_DIR, "MDX Files")
-WORKSTATION = os.path.join(PARENT_DIR, f"{PC_NAME}_{timegm(time.gmtime())}")
+PART_II_SPECS = os.path.join(WORKING_DIR, "MDX Files")
+WORKSTATION = os.path.join(WORKING_DIR, f"{PC_NAME}_{timegm(time.gmtime())}")
 LOGS_FOLDER = os.path.join(WORKSTATION, 'logs')
 TESTS_FOLDER = os.path.join(ROOT_DIR, 'tests')
 TEST_DATASET_FILE = os.path.join(TESTS_FOLDER, "test_dataset.json")
@@ -103,11 +104,30 @@ PACKAGE_ARTIFACT = "package_artifacts"
 PENDING_UPDATES = "pending_updates"
 MAX_JIRA_CHARACTERS = 25000
 SYSTEM_NAME = "MMOTA Cloud Data Setup Tool"
-SYSTEM_VERSION = "v3.0.3"
+SYSTEM_VERSION = "v3.0.6"
 OFFICIAL_BUILD = "official_build"
 FILE_UPLOAD_LIST = "file_upload_list"
 CALIBRATION_FILES = "calibration_files"
 VIM_ARTIFACTS = "vim_artifacts"
+USERS = {
+    "AALAM11": "Alam, Amur (A.P.)",
+    "JJOSEP76": "Joseph, Julian (J.)",
+    "MRIZZO12": "Rizzo, Michael (M.)",
+    "MBROW640": "Brown, Micombero (M.)",
+    "DCORRE10": "Correal, Diana (D.)",
+    "JPERE447": "Perez, Jose (J.A.)",
+    "JANAYA15": "Anaya, Jorge (J.)",
+    "JMERCA35": "Mercado, Juvenal (J.)",
+    "OORTIZ16": "ORTIZ, OSCAR (O.)",
+    "AAMBRIZ": "AMBRIZ, AMAURY (A.)",
+    "URODRIG3": "RODRIGUEZ, URIEL (U.)",
+    "JGILCH10": "Gilchrist, Jeff (J.)",
+    "FREYNOS4": "Reynoso, Fernanda (F.)",
+    "JPRAJA15": "Prajapati, Jaydeep (J.)",
+    "AARELL18": "ARELLANO, ANGEL (A.)",
+    "PVILLAG5": "Villagomez, Patricia (P.)",
+    "SCHOI20": "Choi, Sid (S.)"
+}
 INCLUDED = "included"
 EXCLUDED = "excluded"
 F16B = "f16b"
@@ -197,6 +217,7 @@ CATEGORY = "category"
 LOG_FILE = "log_file"
 SWS_NAME = "sws_name"
 OWNER_GUIDES = "owners_guides"
+SEQUENCE_ID = "sequence_id"
 SEQUENCE_NAME = "sequence_name"
 PART_NUMBER = "partNumber"
 SW_PART_NUMBER = "sw_part_number"
@@ -305,6 +326,7 @@ ACTIVE = "active"
 PENDING = "pending"
 STARTED = "started"
 COMPLETE = "complete"
+FAILED = "failed"
 PARTIAL = "partial"
 CONF_FILE = "conf.py"
 PART_II_PART_NUMBER = "partIiPartNumber"
@@ -405,6 +427,7 @@ DOMAIN_AND_SWS = "domain_and_sws"
 JENKINS_BUILD_URLS = "jenkins_build_urls"
 ACTIVE_JIRA_ISSUES = "active_jira_issues"
 PENDING_JIRA_ISSUES = "pending_jira_issues"
+FAILED_BUILD_SEQUENCE = "failed_build_sequence"
 NEXUS_BASE_URL = "nexus.ford.com"
 SWS_RETRY = 3
 URL_TYPES = {
@@ -542,6 +565,7 @@ variant = MY22_GASD
 model_year = MY22
 model_type = GASD
 """
+BUILD_NUMBER_PATTERN = r".*-([0-9]+)"
 ECG_VMCU_TEMPLATE = [
     "ECG[0-9]*_VMCU_{program}_{variant} ", "(ECG[0-9]*_VMCU_{program}_{model_year})(_{model_type}[.-_A-Z0-9]*)? ",
     r"(?=[_A-Z0-9]*{additional_programs}[_A-Z0-9]* )([_A-Z0-9]+{program}[.-_A-Z0-9]*{model_type}[.-_A-Z0-9]* )",
@@ -888,7 +912,7 @@ UPLOAD_STATUS = "UPLOAD_STATUS"
 def update_workstation():
     global WORKSTATION
     global LOGS_FOLDER
-    WORKSTATION = os.path.join(PARENT_DIR, f"{PC_NAME}_{timegm(time.gmtime())}")
+    WORKSTATION = os.path.join(WORKING_DIR, f"{PC_NAME}_{timegm(time.gmtime())}")
     LOGS_FOLDER = os.path.join(WORKSTATION, 'logs')
     # Create directory to store downloaded files if none exist.
     if not os.path.exists(WORKSTATION):
